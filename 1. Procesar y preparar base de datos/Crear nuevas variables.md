@@ -1,0 +1,24 @@
+# Crear nuevas variables
+
+- *type_airport:* **Large**, **Medium** y **Small**. Clasificación del aeropuerto realizada por la Federal Aviation Administration (FAA) según el volumen de pasajeros que manejan.
+- *coordinates:* Coordenadas geográficas del aeropuerto, expresadas como latitud y longitud.
+- *route:* Ruta del viaje, es decir, aeropuerto de origen y aeropuerto de destino.
+- *national_or_international:* **National** e **International.** Clasificación del aeropuerto según si maneja principalmente vuelos nacionales o internacionales.
+- *us_or_international:* **USA** y **USA Territory**. Indica si el aeropuerto está ubicado dentro de los Estados Unidos o en otro país. Si está en un territorio de EE. UU. pero fuera del territorio continental, se puede clasificar como "US Territory".
+- *number_of_runways:* Número de pistas de aterrizaje operativas en el aeropuerto.
+- *coast:* Clasificación de los aeropuertos según su ubicación geográfica (longitud). **East Coast**: Aeropuertos ubicados aproximadamente al este de la longitud -85 (por ejemplo, Atlanta, Nueva York). **West Coast**: Aeropuertos ubicados aproximadamente al oeste de la longitud -115 (por ejemplo, Los Ángeles, Seattle). **Central**: Aeropuertos que se encuentran entre estos dos rangos.
+- *taxi_out_category*: **Short:** Menor a 10 minutos. Suele considerarse un tiempo muy eficiente y corto. Esto puede ser típico de aeropuertos más pequeños o con menos tráfico. **Moderate:** Entre 10 y 20 minutos. Este rango es considerado un tiempo de rodaje común en aeropuertos con tráfico moderado. **Long:** Entre 20 y 30 minutos. Común en aeropuertos grandes o en horas pico. **Very long:** Más de 30 minutos. Tiempo de rodaje largo, generalmente ocurre en aeropuertos congestionados o con problemas operativos como mal clima. **Unknown:** no hay información.
+- *taxi_in_category*: **Short:** Menor a 5 minutos. Muy corto, común en aeropuertos pequeños con pocas distancias entre la pista y la puerta. **Moderate:** Entre 5 y 10 minutos. Un tiempo común en aeropuertos medianos. **Long:** Entre 10 y 20 minutos. Típico en aeropuertos grandes. **Very long:** Más de 20 minutos. Tiempo largo, generalmente debido a congestionamiento o problemas en la puerta de llegada. **Unknown:** no hay información.
+- *flight_duration_category:* **Cancelled:** 0 minutos. **Short:** 17 a 180 minutos. **Intermediate:** 181 a 360 minutos). **Long:** de 360 minutos a 749 minutos. **Unknown:** valores que se salgan de estos rangos.
+- *delay_duration_category:* **Early:** Para vuelos que salieron antes de lo programado (valores negativos de dep_delay). **On-time:** Para vuelos con dep_delay = 0 (salieron exactamente a tiempo). **Punctual:** Para vuelos con un retraso de entre 1 a 14 minutos, que podrían seguir considerándose a tiempo. **Short:** Para vuelos con un retraso de entre 15 a 30 minutos, un retraso leve. **Intermediate:** Para vuelos con un retraso de entre 31 a 60 minutos, un retraso moderado. **Long:** Para vuelos con un retraso mayor a 60 minutos, considerado un retraso significativo. **Unknown:** valores que se salgan de estos rangos.
+- *delayed:* Flag en base a dep_delay. **1:** vuelo retrasado más de 14 minutos. **2:** vuelo no retrasado, es decir, a tiempo, con menos de 15 minutos de retraso.
+- *dest_latitude:* latitud aeropuerto origen.
+- *dest_longitude:* longitud aeropuerto origen.
+- *origin_latitude:* latitud aeropuerto destino.
+- *origin_longitude:* longitud aeropuerto destino.
+- *distance_km:* Distancia entre aeropuertos de origen y de destino (km) en base a coordenadas geográficas.
+- *distance_category:* **Short:** hasta 1,500 km (aprox 930 millas). Suelen ser vuelos nacionales o entre países vecinos. **Intermediate:** 1,500 a 4,000 km (aprox 930 a 2,500 millas). A menudo conectan ciudades dentro del mismo continente o entre continentes cercanos. **Long:** Más de 4,000 km (aprox 2,500 millas). Los vuelos de largo alcance generalmente cruzan continentes o incluso océanos. **Unknown:** valores que se salgan de estos rangos.
+- *flight_type:* **National** e **International**.
+- *departure_time_slot:* **Early Morning:** 00:00 a 06:00. **Morning:** 06:00 a 12:00. **Midday:** 12:00 a 16:00. **Afternoon:** 16:00 a 20:00. **Night:** 20:00 - 00:00.
+- *dest_time_slot:* **Early Morning:** 00:00 a 06:00. **Morning:** 06:00 a 12:00. **Midday:** 12:00 a 16:00. **Afternoon:** 16:00 a 20:00. **Night:** 20:00 - 00:00.
+- *cancellation_reason:* **Carrier Caused:** A. **Weather:** B. **National Aviation System:** C. **Security:** D. **Other or not identified:** Z.

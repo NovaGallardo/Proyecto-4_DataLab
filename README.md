@@ -150,7 +150,6 @@ Se plantearon las siguientes hipótesis y se validaron utilizando riesgo relativ
 - Las aerolíneas con mayor riesgo de desvíos son **SkyWest Airlines Inc.** (2.77), **Alaska Airlines Inc.** (2.11), y **PSA Airlines Inc.** (1.06).
 - La mayoría de los vuelos desviados ocurren en la **costa central**, generalmente los lunes y martes.
 
----
 
 ## Recomendaciones Estratégicas 💡
 
